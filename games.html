@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="website.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Calistoga&family=Tourney:wght@300;800&display=swap" rel="stylesheet">
+	<link href="./style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+	<div class="nav-bar" id = "myNavBar">
+		<div class="nav-content">
+			<img src="header_left.png" />
+			<div class ="nav-options">
+				<h1>C. S. García Martínez</h1>
+				<div class ="nav-buttons">
+				  <a href="./index.html">About</a>
+				  <a href="./games.html" class = "active">Game Design</a>
+				  <a href="./animation.html" >Animation</a>
+				  <a href="./comics.html">Sequential Art</a>
+				  <a href="./other.html">Other</a>
+				  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				    <i class="fa fa-bars"></i>
+				  </a>
+				</div>
+			</div>
+			<img src="header_right.png" />
+		</div>
+	</div>
+
+
+
+	<div id = "content" style="margin-top: 0px">
+		<div class = "section-info">
+				<p style=>Click on any of the banners below to see gameplay clips and for more information about my particular role!</p>
+			</div>
+	    <button class="accordion">
+	    	<div class = collapsible-content>
+	    		<div class = "collapsible-image left-collapse" style="background-image: url(./Assets/Game/telar_icon.png)"></div>
+		    	<div class = "collapsible-caption"> 
+			    	<h1> Telar - a browser-based pattern-matching game </h1>
+		    		<p> Made in CSS/HTML and JavaScript/React.</p>
+		    	</div>
+		    </div>
+	    </button>
+	    <div class="accordion-content">
+	    	<img src="./Assets/Game/Telar_gameplay.gif" align="left" width= "30%"/>
+	      <p>
+	        "Telar" is a game created in collaboration with the Mexican National Museum of Anthropology, in order to commemorate their opening of a textile exhibit in their contemporary anthropology wings. 
+	      </p>
+
+	      <p>
+	        Telar is a competitive pattern-matching game, where players must match patterns or colors across rows and columns of a backstrap loom to earn points. The game began as a paper prototype, and is currently hosted on the web. <a href = "https://makkine.github.io/Telar/">Click here to play it!</a> 
+	      </p>
+	    </div>
+	    <button class="accordion">
+	    	<div class = collapsible-content>
+	    		
+		    	<div class = "collapsible-caption" > 
+			    	<h1> Bird Scientist Simulator - a phylogenetic tree-based puzzle game</h1>
+		    		<p> Made in the Unity Game Engine.</p>
+		    	</div>
+		    	<div class = "collapsible-image right-collapse" style="border-left: 2px solid brown; border-right: none; background-image: url(./Assets/Game/bird_icon.png)" ></div>
+		    </div>
+	    </button>
+	    <div class="accordion-content">
+	    	<p align="center"><video controls alt="Bird Scientist Simulator demo video" src="./Assets/Game/BirdScientistDemo.mp4" type="video/mp4" width="50%"></video></p>
+	       <p>This was a game created as part of a four-person team. I was the asset developer and in charge of UI/UX programming! 	      </p>
+
+	        <p>Players must explore a series of unique island environments, collect different birds, and try to determine their evolutionary lineages based on their traits. The game explored various aspects of basic ecology, including adaptation, species extinction, and ecological niches. For this game, I created several different rigged and animated bird models, as well as the model for the main character. In addition, I was responsible for coding and designing the interface for the phylogenetic tree puzzles.</p>
+
+	        
+
+	      <div class = "divide"><img src="scribble.png"/> </div>
+	    </div>
+
+		<button class="accordion">
+	    	<div class = collapsible-content>
+	    		<div class = "collapsible-image" style="background-image: url(./Assets/Game/nightshift_icon.png)"></div>
+		    	<div class = "collapsible-caption"> 
+			    	<h1> The Night Shift - a game about the functions of sleep </h1>
+		    		<p> Made in the Unity game engine. Vesalius Trust winner! </p>
+		    	</div>
+		    </div>
+	    </button>
+	    <div class="accordion-content">
+	      <p align="center"><video controls alt="Nightshift demo video" src="./Assets/Game/NightShiftDemoReel.mp4" type="video/mp4" width="50%"></video></p>
+	       <p>This game was created by a team of Master's students at the University of Illinois at Chicago for the Vesalius-trust-a-thon, a yearly game jam.</p>
+
+	        <p>The game consists of a series of short mini-games, which earn the player stars. Get seven stars to win the game! These games educate players on the importance of sleep for various bodily processes, such as memory formation, digestion, and bone repair. I was responsible for programming the UI/UX elements of everything outside of these minigames - these included the start menu, mini-game selection, audio controls, and win/lose states. I was also involved as a debugger and playtester for the minigames. </p>
+
+		</div>
+
+		<button class="accordion">
+	    	<div class = collapsible-content>
+		    	<div class = "collapsible-caption"> 
+			    	<h1> Home Microbiome - a prototype for an AR-based interactive application </h1>
+		    		<p> Made in the Unity game engine.</p>
+		    	</div>
+		    	<div class = "collapsible-image" style="border-left: 2px solid brown; border-right: none; background-image: url(./Assets/Game/microbiome_icon.png); background-position: -10px -18px;"></div>
+		    </div>
+	    </button>
+	    <div class="accordion-content">
+	    	<div style="display:flex;">
+			   <video controls alt="VR demo video" src="./Assets/Game/ARDemo.mp4" type="video/mp4" width = "80%" ></video>
+		      <p style="padding:4%;">
+
+		        This project was intended as a quick proof of concept to familiarize myself with coding in Unity for AR applications. In this app, the user would be able to "magnify" any flat surface in their bedroom, kitchen, or bathroom, in order to learn more about some of the potential microorganisms that may be found domestically, both pathogenic and benign. Only the kitchen was completed for the proof of concept. I was the sole developer on this project, and was responsible for asset development, UI/X design, and programming. 
+		      </p>
+		  </div>
+		      	    <div class = "divide"><img src="scribble.png"/> </div>
+		</div>
+
+		<button class="accordion">
+	    	<div class = collapsible-content>
+	    		<div class = "collapsible-image" style="background-image: url(./Assets/Game/AR_icon.png)"></div>
+		    	<div class = "collapsible-caption"> 
+			    	<h1> A prototype immersive VR game about the circulatory pathway </h1>
+		    		<p> Made in the Unity game engine.</p>
+		    	</div>
+		    </div>
+	    </button>
+	    <div class="accordion-content">
+	      <p align="center"><video controls alt="VR demo video" src="./Assets/Game/VRDemo.mp4" type="video/mp4" width="50%"></video></p>
+	      <p>
+	        This game was created as an independent short project to familiarize myself with coding in Unity for VR deployment. This game was tested on the HTC Vive. I was the sole developer for this quick prototype, and was responsible for level design, asset development, UI/X design, and programming. 
+	      </p>
+	      <p>
+	      	The game consists of a timed "race" to get oxygenated blood to the duodenum, starting in the right atrium of the heart! 
+	      </p>
+	      	    <div class = "divide"><img src="scribble.png"/> </div>
+		</div>
+
+	</div>
+	<div class = "footer">
+		<a href="mailto:smakkine@gmail.com"><img src = "./email_icon.png"/></a>
+		<a href="https://twitter.com/smakkine"><img src = "./twitter_icon.png"/></a>
+	</div>
+	<script src="website.js"></script>
+
+</body>
+</html>
