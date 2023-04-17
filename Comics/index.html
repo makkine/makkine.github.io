@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="../website.css">
+	<script type="text/javascript" src="../website.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Calistoga&family=Tourney:wght@300;800&display=swap" rel="stylesheet">
+	<link href="../style.css" rel="stylesheet" type="text/css" />
+	<title> C. S. García Martínez - Sequential Art</title>
+	<link rel="icon" href="../favicon.png">
+
+</head>
+<body>
+
+	<!--- Lightbox ---->
+	<div class="lightbox" id="myLightbox">
+	  <div class = "lightbox-bg" onclick="closeModal()"></div>
+	  <span class="close cursor" onclick="closeModal()">&times;</span>
+	  <div class="lightbox-content" onclick=""  style="margin-top: 5px;">
+
+	    <div class = "slideshow" id="mySlides">
+
+	      <img id ="slideImage" src="header_left.png" style="width:100%">
+	      <div id = "downloadLink" ><a href="" target="_blank">Download PDF</a></div>
+	    </div>
+
+	    <!-- Next/previous controls -->
+	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	    <!-- Caption text -->
+	    <div class="caption-container">
+	      <div class="numbertext" id = "myNumberText">1 / 4</div>
+	      <p id="caption" style="margin: 10px">DHSDFHDSLJFSHLF</p>
+	    </div>
+	  </div>
+	</div>
+
+	<div class="nav-bar" id = "myNavBar">
+		<div class="nav-content">
+			<img src="../header_left.png" />
+			<div class ="nav-options">
+				<h1>C. S. García Martínez</h1>
+				<div class ="nav-buttons">
+				  <a href="../" >About</a>
+				  <a href="../Games">Game Design</a>
+				  <a href="../Animation">Animation</a>
+				  <a href="/" class="active">Sequential Art</a>
+				  <a href="../Other">Other</a>
+				  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				    <i class="fa fa-bars"></i>
+				  </a>
+				</div>
+			</div>
+			<img src="../header_right.png" />
+		</div>
+	</div>
+
+
+
+
+
+	<div id = "content" style="margin-top: 0px">
+			<div class = "section-info">
+		<p>Click on any of the comics below to see a two page spread - some comics have PDF files available to download to read the full content. Please note, not all of these comics take scientific or medical subject matter as their primary focus!</p>
+	</div>
+		<div class="image-gallery">
+			<div class = "gallery-image gallery-illustration " onclick="openModal();currentSlide(0)" alt ="A (fictional) account of a Paris watchmaker's encounter with a (real) mechanical duck created by Jacques de Vaucanson, which Vaucanson described as being able to perform all the digestive functions of a real duck. Available in the Failure to Launch anthology distributed by Iron Circus Comics! " >
+				<div class = "gallery-image-hover hover-active"></div>
+				<div class = "image-preview illustration">
+					<img alt="A (fictional) account of a Paris watchmaker's encounter with a (real) mechanical duck created by Jacques de Vaucanson, which Vaucanson described as being able to perform all the digestive functions of a real duck. Available in the Failure to Launch anthology distributed by Iron Circus Comics!" src="../Assets/Comic/duck_spread.png" />
+				</div>
+				<p>The Digesting Duck</p>
+			</div>
+			<div class = "gallery-image gallery-illustration pdf-available" onclick="openModal();currentSlide(1)" alt ="A bilingual (English and Spanish) pamphlet covering the symptoms of aphasia, as well as some interventions, with a focus on bilingual patients and experiences.">
+				<div class = "gallery-image-hover hover-active"></div>
+				<div class = "image-preview illustration">
+					<a href = "../Assets/Comic/Bilingual_pamphlet.pdf" class ="comic-link">Download</a>
+					<img alt="A bilingual (English and Spanish) pamphlet covering the symptoms of aphasia, as well as some interventions, with a focus on bilingual patients and experiences." src="../Assets/Comic/aphasia_spread.png" />
+				</div>
+				<p>Aphasia Brochure</p>
+			</div>
+			<div class = "gallery-image gallery-illustration" onclick="openModal();currentSlide(2)" alt ="A one-page comic discussing the life and research of Barbara McClintock">
+				<div class = "gallery-image-hover hover-active"></div>
+				<div class = "image-preview illustration">
+					<img alt="A one-page comic discussing the life and research of Barbara McClintock" src="../Assets/Comic/Gems4.png" />
+				</div>
+				<p>Barbara McClintock</p>
+			</div>
+			<div class = "gallery-image gallery-illustration" onclick="openModal();currentSlide(3)" alt ="A single two-page spread from an in-progress graphic novella covering the repercussions of scientific fraud.">
+				<div class = "gallery-image-hover hover-active"></div>
+				<div class = "image-preview illustration">
+					<img alt="A single two-page spread from an in-progress graphic novella covering the repercussions of scientific fraud." src="../Assets/Comic/Stem_cells.png" />
+				</div>
+				<p>Stem Cells (sample)</p>
+			</div>
+			<div class = "gallery-image gallery-illustration pdf-available" onclick="openModal();currentSlide(4)" alt ="The first ten pages from an in-progress graphic novel about the decline of a fictional seventeenth-century province (warning for gun violence). ">
+				<div class = "gallery-image-hover hover-active"></div>
+				<div class = "image-preview illustration">
+					<a href = "../Assets/Comic/Malatona_sample.pdf" class ="comic-link">Download</a>
+					<img alt="The first ten pages from an in-progress graphic novel about the decline of a fictional seventeenth-century province (warning for gun violence). " src="../Assets/Comic/Malatona_spread.png" />
+				</div>
+				<p>Malatona (sample)</p>
+			</div>
+			<div class = "gallery-image gallery-illustration pdf-available" onclick="openModal();currentSlide(5)" alt ="A course in the use of proportion for character design and consistency, created as an experiment in educational comics. ">
+				<div class = "gallery-image-hover hover-active"></div>
+				<div class = "image-preview illustration">
+					<a href = "../Assets/Comic/proportion.pdf" class ="comic-link">Download</a>
+					<img alt="A course in the use of proportion for character design and consistency, created as an experiment in educational comics. " src="../Assets/Comic/proportion.jpg" />
+				</div>
+				<p>Character Design</p>
+			</div>
+			<div class = "gallery-image gallery-illustration pdf-available" onclick="openModal();currentSlide(6)" alt ="A comic about a revolutionary in Pancho Villa's army, helping two women find love. Created for the Ignatz-nominated Dates! anthology.">
+				<div class = "gallery-image-hover hover-active"></div>
+				<div class = "image-preview illustration">
+					<a href = "../Assets/Comic/Villista.pdf" class ="comic-link">Download</a>
+					<img alt="A comic about a revolutionary in Pancho Villa's army helping two women find love. Created for the Ignatz-nominated Dates! anthology." src="../Assets/Comic/Nazas.png" />
+				</div>
+				<p>By the Nazas River</p>
+			</div>
+			<div class = "gallery-image gallery-illustration pdf-available" onclick="openModal();currentSlide(7)" alt ="Two old college friends find each other in the desert. Warning for gun violence.">
+				<div class = "gallery-image-hover hover-active"></div>
+				<div class = "image-preview illustration">
+					<a href = "../Assets/Comic/Oscar.pdf" class ="comic-link">Download</a>
+					<img alt="Two old college friends find each other in the desert. Warning for gun violence." src="../Assets/Comic/oscar.png" />
+				</div>
+				<p>Oscar Rivas Baez</p>
+			</div>
+			<div class = "gallery-image gallery-illustration pdf-available" onclick="openModal();currentSlide(8)" alt ="Una pareja adinerada se va a la luna. Incluye representaciones de violencia domestica. Fue creado para una antología de la imprenta Familia Usaka, ubicada en Puebla.">
+				<div class = "gallery-image-hover hover-active"></div>
+				<div class = "image-preview illustration">
+					<a href = "yahoo.com" class ="comic-link">Download</a>
+					<img alt="Una pareja adinerada se va a la luna. Incluye representaciones de violencia domestica. Fue creado para una antología de la imprenta Familia Usaka, ubicada en Puebla." src="../Assets/Comic/moon.png" />
+				</div>
+				<p>Viaje a la Luna (in Spanish)</p>
+			</div>
+
+		</div>
+	</div>
+
+	<div class = "footer">
+		<a href="mailto:smakkine@gmail.com"><img src = "../email_icon.png"/></a>
+		<a href="https://twitter.com/smakkine"><img src = "../twitter_icon.png"/></a>
+	</div>
+
+
+</body>
+</html>
