@@ -17,7 +17,7 @@
 	<div class="nav-content">
 		<img src="header_left.png" />
 		<div class ="nav-options">
-			<h1>C. S. García Martínez</h1>
+			<h1><a href="/">C. S. García Martínez</a></h1>
 			<div class ="nav-buttons">
 			  <a href="#bio" class="active">About</a>
 			  <a href="Games">Game Design</a>
@@ -25,13 +25,14 @@
 			  <a href="Comics">Sequential Art</a>
 			  <a href="Other">Other</a>
 			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-			    <i class="fa fa-bars"></i>
+			    <i class="fa fa-bars" id="myIcon"></i>
 			  </a>
 			</div>
 		</div>
 		<img src="header_right.png" />
 	</div>
 </div>
+
 <div id = "content">
 	<div id = "intro"> 
 		<div id = "headshot-nav">
@@ -48,30 +49,46 @@
 	<div class = "divide"><img src="scribble.png"/> </div>
 	<div id = "nav">
 		<div class = "nav-category">
-			<img src="./game_icon.png"/>
+			<div class="landing-nav-img">
+				<a href = "Games">
+					<img src="./game_icon.png"/>
+				</a>
+			</div>
 			<div class ="category-text">
 				<h2><a href = "Games">Game Design</a></h2>
 				<p>From a pattern-matching webgame to a phylogenetic tree puzzle, I have created educational games in Unity, JavaScript/React, and simple paper. I can code for desktop, web, and AR/VR production environments. <a href="Games">See some examples! </a></p>
 			</div>
 		</div>
 		<div class = "nav-category">
-			<img src="./animation.png"/>
+			<div class="landing-nav-img">
+				<a href = "Animation">
+					<img src="./animation.png"/>
+				</a>
+			</div>
 			<div class ="category-text">
 				<h2><a href = "Animation">Animation</a></h2>
 				<p>I can create 3D and 2D animations to tell a variety of scientific and medical stories. I have experience in Blender, Maya, 3DSMax, and ToonBoom Harmony. <a href="Animation">See some examples! </a></p>
 			</div>
 		</div>
 		<div class = "nav-category">
-			<img src="./comics.png"/>
+			<div class="landing-nav-img">
+				<a href = "Comics">
+					<img src="./comics.png"/>
+				</a>
+			</div>
 			<div class ="category-text">
 				<h2><a href = "Comics">Sequential and Narrative Illustration</a></h2>
 				<p>I have seven years of experience in writing and illustrating comics for publishing, and take this experience with me to graphic medicine projects. <a href="Comics">See some examples! </a></p>
 			</div>
 		</div>
 		<div class = "nav-category">
-			<img src="./illo.png"/>
+			<div class="landing-nav-img">
+				<a href = "Other">
+					<img src="./illo.png"/>
+				</a>
+			</div>
 			<div class ="category-text">
-				<h2><a href="Other">Other</a></h2>
+				<h2><a href="Other">Illustration</a></h2>
 				<p>I take my storytelling-first approach to all standalone illustrations and models that I create. I am a digital and traditional illustrator with ample experience in scientific subject matter. <a href="Other">See some examples! </a></p>
 			</div>
 		</div> 
