@@ -9,8 +9,16 @@ h1{
     color: saddlebrown;
 }
 
+h1 a{
+  text-decoration: none;
+}
+
 h2 a{
   text-decoration: none;
+  color: saddlebrown;
+}
+
+a:visited{
   color: saddlebrown;
 }
 
@@ -38,9 +46,21 @@ h2{
 	color: saddlebrown;
 }
 
-.nav-category img{
-	min-width: 16%;
-	max-width: 16%;
+
+.nav-category a{
+  padding: none;
+  min-width: 16%;
+  max-width: 16%;
+  margin: none;
+}
+
+.nav-category a img{
+  max-width: 100%;
+  opacity: 70%;
+}
+
+.nav-category a img:hover{
+  opacity: 100%;
 }
 
 #content{
@@ -133,7 +153,7 @@ h2{
 
 
 /* Style the links inside the navigation bar */
-.nav-bar a {
+.nav-buttons a {
   display: inline-flex;
   margin: auto;
   color: saddlebrown;
@@ -535,7 +555,57 @@ button.accordion p{
 .accordion-content p{
 }
 
+/***STOREFRONT****/
+.storefront{
+  display: inline-block;
+  text-align: center;
+}
+.for-sale{
+  padding: 2%;
+  align: center;
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+  width: 70%;
+  vertical-align: top;
+}
 
+.for-sale-img{
+  display: inline-block; 
+  width: 40%;
+  padding: 2%;
+  vertical-align: top;
+}
+
+.for-sale-img img{
+  width: 100%;
+}
+
+.buy-now-btn{
+
+              display: inline-block;
+              font-size: 18px;
+              line-height: 48px;
+              height: 48px;
+              color: #ffffff;
+              min-width: 212px;
+              text-align: center;
+              box-shadow: 0 0 0 1px rgba(0,0,0,.1) inset;
+              border-radius: 6px;
+  background-color:  rgba(167, 108, 65, 1.0);
+  text-decoration: none;
+}
+
+
+
+.buy-now-btn:hover{
+  background-color:  saddlebrown;
+  text-decoration: underline;
+}
+
+.buy-now-btn:visited{
+  color: white;
+}
 
 
 /*FOOTER*/
@@ -561,6 +631,19 @@ button.accordion p{
   .nav-bar a.icon {
     float: right;
     display: block;
+  }
+
+  .for-sale{
+    width: 100%;
+  }
+
+  .for-sale-img{
+    display: block;
+    width: 100%;
+  }
+
+  .for-sale-img img{
+    width: 70%;
   }
 }
 
