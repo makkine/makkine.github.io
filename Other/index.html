@@ -6,9 +6,10 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Calistoga&family=Tourney:wght@300;800&display=swap" rel="stylesheet">
 	<link href="../style.css" rel="stylesheet" type="text/css" />
-		<title> C. S. García Martínez - Other</title>
+	<title> C. S. García Martínez - Other</title>
 	<link rel="icon" href="../favicon.png">
 
 </head>
@@ -50,7 +51,7 @@
 				  <a href="../Comics">Sequential Art</a>
 				  <a href="/"  class = "active">Other</a>
 				  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				    <i class="fa fa-bars"></i>
+				    <i class="fa fa-bars" id="myIcon"></i>
 				  </a>
 				</div>
 			</div>
@@ -65,63 +66,77 @@
 				<p style=>The projects below represent some of my work in 2D illustration, 3D rendering of still images, and graphic design. Click on any image to enlarge it!</p>
 			</div>
 		<div class="image-gallery">
-			<div class = "gallery-image gallery-illustration " onclick="openModal();currentSlide(0)" alt ="An in-progress poster on the evolution of the shoulder girdle of turtles. Blender and zBrush, 2023.">
+			<div class = "gallery-image gallery-illustration " onclick="openModal();currentSlide(0)" alt ="An image depicting the cranial nerves. Brush and ink, 2024.">
 				<div class = "gallery-image-hover hover-active"></div>
 				<div class = "image-preview illustration">
-					<img alt="An in-progress poster on the evolution of the shoulder girdle of turtles. Blender and zBrush, 2023." src="../Assets/Illustration/turtle_evolution.png" />
+					<img alt="An image depicting the cranial nerves. Brush and ink, 2024." src="../Assets/Illustration/cranial_nerves.png" />
+				</div>
+				<p>Cranial Nerves</p>
+			</div>
+			<div class = "gallery-image gallery-illustration " onclick="openModal();currentSlide(1)" alt ="Images depicting the pupillary light reflex. Brush and ink, 2024.">
+				<div class = "gallery-image-hover hover-active"></div>
+				<div class = "image-preview illustration">
+					<img alt="Images depicting the pupillary light reflex. Brush and ink, 2024." src="../Assets/Illustration/PLR1.png" />
+				</div>
+				<p>Pupillary Light Reflex</p>
+			</div>
+			<div class = "gallery-image gallery-illustration " onclick="openModal();currentSlide(2)" alt ="An in-progress poster on the evolution of the shoulder girdle of turtles. Blender and zBrush, 2023.">
+				<div class = "gallery-image-hover hover-active"></div>
+				<div class = "image-preview illustration">
+					<img alt="Images created for a poster on the evolution of the shoulder girdle of turtles. Blender and zBrush, 2023." src="../Assets/Illustration/turtle_evolution.png" />
 				</div>
 				<p>Turtle Evolution Poster</p>
 			</div>
-			<div class = "gallery-image gallery-illustration" onclick="openModal();currentSlide(1)" alt ="A poster created for the National Aphasia Association on basic rights that should be respected in patients with aphasia. Adobe inDesign and Clip Studio Paint, 2022.">
+			<div class = "gallery-image gallery-illustration" onclick="openModal();currentSlide(3)" alt ="A poster created for the National Aphasia Association on basic rights that should be respected in patients with aphasia. Adobe inDesign and Clip Studio Paint, 2022.">
 				<div class = "gallery-image-hover hover-active"></div>
 				<div class = "image-preview illustration">
 					<img alt="A poster created for the National Aphasia Association on basic rights that should be respected in patients with aphasia. Adobe inDesign and Clip Studio Paint, 2022." src="../Assets/Illustration/Aphasia_BOR_COLOR-1-1.png" />
 				</div>
 				<p>Aphasia poster</p>
 			</div>
-			<div class = "gallery-image gallery-illustration" onclick="openModal();currentSlide(2)" alt ="A poster on the use of functional ultrasound during brain surgery. Clip Studio Paint, 2022.">
+			<div class = "gallery-image gallery-illustration" onclick="openModal();currentSlide(4)" alt ="A poster on the use of functional ultrasound during brain surgery. Clip Studio Paint, 2022.">
 				<div class = "gallery-image-hover hover-active"></div>
 				<div class = "image-preview illustration">
 					<img alt="A poster on the use of functional ultrasound during brain surgery. Clip Studio Paint, 2022." src="../Assets/Illustration/Aake_EMS_color.png" />
 				</div>
 				<p>Ultrasound in brain surgery</p>
 			</div>
-			<div class = "gallery-image gallery-illustration " onclick="openModal();currentSlide(3)" alt ="A non-stigmatizing look at the mechanism of action of botulinum toxin. Clip Studio Paint, 2022.">
+			<div class = "gallery-image gallery-illustration " onclick="openModal();currentSlide(5)" alt ="A non-stigmatizing look at the mechanism of action of botulinum toxin. Clip Studio Paint, 2022.">
 				<div class = "gallery-image-hover hover-active"></div>
 				<div class = "image-preview illustration">
 					<img alt="A non-stigmatizing look at the mechanism of action of botulinum toxin. Clip Studio Paint, 2022." src="../Assets/Illustration/gems3.png" />
 				</div>
 				<p>Botox Mechanism of Action</p>
 			</div>
-			<div class = "gallery-image gallery-illustration " onclick="openModal();currentSlide(4)" alt ="An in-depth look at a potential role that wnt signalling plays in fertility in male mice. Clip Studio Paint, 2022. ">
+			<div class = "gallery-image gallery-illustration " onclick="openModal();currentSlide(6)" alt ="An in-depth look at a potential role that wnt signalling plays in fertility in male mice. Clip Studio Paint, 2022. ">
 				<div class = "gallery-image-hover hover-active"></div>
 				<div class = "image-preview illustration">
 					<img alt="An in-depth look at a potential role that wnt signalling plays in fertility in male mice. Clip Studio Paint, 2022." src="../Assets/Illustration/gems5.png" />
 				</div>
 				<p>CARF -/- Mice Fertility</p>
 			</div>
-			<div class = "gallery-image gallery-illustration " onclick="openModal();currentSlide(5)" alt ="A fairly schematic look at how a ribosome rejects aa-tRNA. Clip Studio Paint, 2022.">
+			<div class = "gallery-image gallery-illustration " onclick="openModal();currentSlide(7)" alt ="A fairly schematic look at how a ribosome rejects aa-tRNA. Clip Studio Paint, 2022.">
 				<div class = "gallery-image-hover hover-active"></div>
 				<div class = "image-preview illustration">
 					<img alt="A fairly schematic look at how a ribosome rejects aa-tRNA. Clip Studio Paint, 2022." src="../Assets/Illustration/gems2.png" />
 				</div>
 				<p>Ribosomes</p>
 			</div>
-			<div class = "gallery-image gallery-illustration" onclick="openModal();currentSlide(6)" alt ="A description of the effects of alcoholism on the brain, intended for a general audience. Clip Studio Paint, 2022.">
+			<div class = "gallery-image gallery-illustration" onclick="openModal();currentSlide(8)" alt ="A description of the effects of alcoholism on the brain, intended for a general audience. Clip Studio Paint, 2022.">
 				<div class = "gallery-image-hover hover-active"></div>
 				<div class = "image-preview illustration">
 					<img alt="A description of the effects of alcoholism on the brain, intended for a general audience. Clip Studio Paint, 2022." src="../Assets/Illustration/BVIS508_GarciaMartinezS_ Poster_2020420.png" />
 				</div>
 				<p>Alcohol Withdrawal</p>
 			</div>
-			<div class = "gallery-image gallery-illustration " onclick="openModal();currentSlide(7)" alt ="An illustration depicting the sympathetic and parasympathetic innervation of the intraocular muscles. Graphite, 2021.">
+			<div class = "gallery-image gallery-illustration " onclick="openModal();currentSlide(9)" alt ="An illustration depicting the sympathetic and parasympathetic innervation of the intraocular muscles. Graphite, 2021.">
 				<div class = "gallery-image-hover hover-active"></div>
 				<div class = "image-preview illustration">
 					<img alt="An illustration depicting the sympathetic and parasympathetic innervation of the intraocular muscles. Graphite, 2021." src="../Assets/Illustration/BVIS510_GarciaMartinezS_Assign5_2021.png" />
 				</div>
 				<p>Para/sympathetic innervation of the eye</p>
 			</div>
-			<div class = "gallery-image gallery-illustration" onclick="openModal();currentSlide(8)" alt ="An illustration of the human shoulder girdle. Graphite, 2021.">
+			<div class = "gallery-image gallery-illustration" onclick="openModal();currentSlide(10)" alt ="An illustration of the human shoulder girdle. Graphite, 2021.">
 				<div class = "gallery-image-hover hover-active"></div>
 				<div class = "image-preview illustration">
 					<img alt="An illustration of the human shoulder girdle. Graphite, 2021." src="../Assets/Illustration/BVIS510_GarciaMartinezS_Assign1a_20210907.jpg" />

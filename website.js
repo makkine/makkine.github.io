@@ -4,6 +4,9 @@ var slideIndex = 0;
 
 function myFunction() {
   var x = document.getElementById("myNavBar");
+  var ic = document.getElementById("myIcon");
+  ic.classList.toggle('fa-bars');
+  ic.classList.toggle('fa-times');
   if (x.className === "nav-bar") {
     x.className += " responsive";
   } else {
